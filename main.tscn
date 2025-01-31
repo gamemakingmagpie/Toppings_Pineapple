@@ -1,0 +1,155 @@
+[gd_scene load_steps=8 format=3 uid="uid://cqhix1u38geet"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_2ser4"]
+[ext_resource type="PackedScene" path="res://ChatReceiver.tscn" id="1_3rcla"]
+[ext_resource type="PackedScene" uid="uid://dyce2yafxvuj1" path="res://apple_game.tscn" id="1_26y1e"]
+[ext_resource type="PackedScene" uid="uid://ckbfu6y32i2b6" path="res://cursor.tscn" id="2_bnccd"]
+[ext_resource type="PackedScene" uid="uid://dy1c1yia6bh05" path="res://grid.tscn" id="3_ggdhj"]
+[ext_resource type="PackedScene" uid="uid://butg4d6y4cb46" path="res://Timer.tscn" id="4_kgacp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bubs0"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2ser4")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bubs0")
+
+[node name="ChatReceiver" parent="." instance=ExtResource("1_3rcla")]
+
+[node name="Cursor" parent="." instance=ExtResource("2_bnccd")]
+
+[node name="apple_game" parent="." instance=ExtResource("1_26y1e")]
+custom_minimum_size = Vector2(540, 300)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_right = 0.0
+anchor_bottom = 0.5
+offset_left = 531.0
+offset_top = -150.0
+offset_right = 1071.0
+offset_bottom = 150.0
+grow_horizontal = 1
+
+[node name="Grid" parent="apple_game" instance=ExtResource("3_ggdhj")]
+layout_mode = 1
+
+[node name="HowToPlay" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 87.0
+offset_top = -175.5
+offset_right = 423.0
+offset_bottom = 175.5
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HowToPlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HowToPlay/MarginContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "[center][font_size=30] 게임플레이 방법 [/font_size]
+
+합계가 10이 되도록 사과들을 드래그
+
+
+
+[font_size=30]시청자 훈수 방법[/font_size]
+
+왼쪽 위 > 오른쪽 아래 순으로 작성합니다.
+
+입력 예시 : AaCb > Aa부터 Cb까지를 표시
+"
+
+[node name="Timer" parent="." instance=ExtResource("4_kgacp")]
+layout_mode = 1
+offset_top = -20.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -77.0
+offset_bottom = 66.0
+grow_horizontal = 0
+
+[node name="MainMenuButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "메인 메뉴"
+
+[node name="Reroll" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "리롤"
+
+[node name="Score" type="Label" parent="."]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -81.0
+offset_right = 50.0
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 50
+text = "0"
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="."]
+visible = false
+layout_mode = 1
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 227.0
+offset_bottom = 123.0
+placeholder_text = "DEBUG"
+
+[node name="Button" type="Button" parent="LineEdit"]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "SEND"
+
+[connection signal="ChatReceived" from="ChatReceiver" to="." method="_on_chat_receiver_chat_received"]
+[connection signal="Matched" from="Cursor" to="." method="_on_cursor_matched"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Reroll" to="." method="_on_reroll_pressed"]
+[connection signal="pressed" from="LineEdit/Button" to="." method="_on_button_pressed"]

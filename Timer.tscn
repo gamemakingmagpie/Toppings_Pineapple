@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://butg4d6y4cb46"]
+
+[ext_resource type="Script" path="res://Timer.gd" id="1_17kvj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87wln"]
+bg_color = Color(0.682353, 0.682353, 0.682353, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y64eu"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="Timer" type="ProgressBar"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -27.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/background = SubResource("StyleBoxFlat_87wln")
+theme_override_styles/fill = SubResource("StyleBoxFlat_y64eu")
+value = 50.0
+show_percentage = false
+script = ExtResource("1_17kvj")

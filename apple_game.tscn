@@ -1,0 +1,785 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyce2yafxvuj1"]
+
+[ext_resource type="Script" path="res://apple_game.gd" id="1_7ap77"]
+[ext_resource type="PackedScene" uid="uid://bd5h024rwnfdl" path="res://apple.tscn" id="2_abq7b"]
+
+[node name="apple_game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7ap77")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple2" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple3" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple4" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple5" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple6" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple7" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple8" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple9" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple10" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple11" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple12" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple13" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple14" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple15" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple16" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple17" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple2" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple3" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple4" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple5" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple6" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple7" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple8" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple9" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple10" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple11" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple12" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple13" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple14" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple15" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple16" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple17" parent="VBoxContainer/HBoxContainer2" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple2" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple3" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple4" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple5" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple6" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple7" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple8" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple9" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple10" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple11" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple12" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple13" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple14" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple15" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple16" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple17" parent="VBoxContainer/HBoxContainer3" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple2" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple3" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple4" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple5" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple6" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple7" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple8" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple9" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple10" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple11" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple12" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple13" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple14" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple15" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple16" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple17" parent="VBoxContainer/HBoxContainer4" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple2" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple3" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple4" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple5" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple6" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple7" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple8" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple9" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple10" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple11" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple12" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple13" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple14" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple15" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple16" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple17" parent="VBoxContainer/HBoxContainer5" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple2" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple3" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple4" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple5" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple6" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple7" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple8" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple9" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple10" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple11" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple12" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple13" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple14" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple15" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple16" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple17" parent="VBoxContainer/HBoxContainer6" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple2" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple3" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple4" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple5" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple6" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple7" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple8" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple9" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple10" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple11" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple12" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple13" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple14" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple15" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple16" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple17" parent="VBoxContainer/HBoxContainer7" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer8" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple2" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple3" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple4" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple5" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple6" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple7" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple8" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple9" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple10" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple11" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple12" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple13" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple14" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple15" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple16" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple17" parent="VBoxContainer/HBoxContainer8" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer9" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple2" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple3" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple4" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple5" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple6" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple7" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple8" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple9" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple10" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple11" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple12" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple13" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple14" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple15" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple16" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple17" parent="VBoxContainer/HBoxContainer9" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer10" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple2" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple3" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple4" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple5" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple6" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple7" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple8" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple9" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple10" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple11" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple12" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple13" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple14" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple15" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple16" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Apple17" parent="VBoxContainer/HBoxContainer10" instance=ExtResource("2_abq7b")]
+layout_mode = 2
+size_flags_horizontal = 3

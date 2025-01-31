@@ -1,0 +1,107 @@
+[gd_scene load_steps=3 format=3 uid="uid://2srsepqris41"]
+
+[ext_resource type="Script" path="res://start.gd" id="1_o7iq6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u1wxb"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o7iq6")
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_u1wxb")
+
+[node name="Title" type="RichTextLabel" parent="."]
+modulate = Color(1, 1, 0.207843, 1)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 260.0
+grow_horizontal = 2
+bbcode_enabled = true
+text = "[center][tornado][font_size=200]파인애플 토핑"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.0
+offset_top = -24.0
+offset_right = 196.0
+offset_bottom = 297.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="ChannelID" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "채널 ID"
+horizontal_alignment = 1
+
+[node name="ChannelIDInput" type="LineEdit" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+placeholder_text = "https://chzzk.naver.com/live/_____여기있는거_____"
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "게임 시간"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="TimerLabel" type="Label" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "120초"
+horizontal_alignment = 1
+
+[node name="TimerTime" type="HSlider" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 30.0
+max_value = 300.0
+step = 30.0
+value = 120.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="DarkmodeLabel" type="Label" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "다크 모드"
+
+[node name="DarkmodeCheckbox" type="CheckBox" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 8
+focus_mode = 0
+button_pressed = true
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "시작"
+
+[connection signal="text_changed" from="VBoxContainer/ChannelIDInput" to="." method="_on_channel_id_input_text_changed"]
+[connection signal="value_changed" from="VBoxContainer/HBoxContainer/TimerTime" to="." method="_on_timer_time_value_changed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/DarkmodeCheckbox" to="." method="_on_darkmode_checkbox_pressed"]
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
